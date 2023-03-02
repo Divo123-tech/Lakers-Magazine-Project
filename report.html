@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1>Report</h1>
+    <h2>Cristopher Meidivo Harsono</h2>
+    <h3>Introduction</h3>
+    <p>
+      The essential story being told by the website leans more toward the fan
+      made element of a magazine/newsletter. When I was researching possible
+      magazine websites to emulate I found myself dissatisfied by the very
+      professional looking, fashion, high society type websites and found myself
+      gravitating more towards colorful and flashy fan made websites. This
+      website tells the story of an organization started by only a handful of
+      passionate fans that got lucky enough to find reporters that can talk
+      directly to the team, writers who work right as the news drops, and a
+      single web developer who makes the website for free and out of their own
+      passion. That last one you could say was also inspired by this real life
+      situation. The structure was very simple, it would be a homepage that was
+      capable of reaching nearly every page in the website. It tells the story
+      of the site, the team, and incentivizes the visitor to subscribe. Each
+      part of the website emphasizes a different element of Javascript and CSS,
+      whether it be closure functions, handlebars, DOM manipulation, bootstrap
+      grid, flexbox, animation, and more. The idea was to make the website more
+      than just articles but instead have different parts that would be
+      applicable to a fan made site like the one I made.
+    </p>
+
+    <h3>Inspiration</h3>
+    <p>
+      There were two major sites that inspired the way I made my website and
+      that was the lakersnation.com website, and the silverscreenandroll.com
+      website. As a Lakers fan I have been following both these sites and was
+      greatly inspired by how it was able to balance professionalism and fun.
+      The websites are colorful, interactive, with art in numerous places, and
+      yet it still looks like a real website that serves its purpose of updating
+      viewers with the latest information regarding the Los Angeles Lakers. I
+      especially followed their color schemes, and navigation ideas. I used some
+      of the Lakers Nation articles list ideas, as well as some of their
+      formats. Furthermore, the official NBA.com website was also inspirational
+      to me, as they also have a list of articles and yet their website provides
+      information through a variety of other means, something I took to heart
+      through the addition of the “draft page”.
+    </p>
+
+    <h3>Accessibility</h3>
+    <p>
+      I made sure to use specific semantic elements in my HTML page to their
+      fullest abilities in order to help screen readers better identify those
+      sections to those who are visually impaired. For example I included the
+      semantic elements: header, nav, footer, and section just to list a few.
+    </p>
+    <br />
+    <p>
+      I also added aria-labels to certain parts of the website that would be
+      more difficult for screen readers to read such as the navigation bar. I
+      gave 'for' values in the sign up form to help screen readers read the
+      purposes of the inputs. I specified the language of the html page in the
+      html tag to english to help clarify to international readers.
+    </p>
+    <br />
+    <p>
+      Finally, I gave descriptive alt tags to <strong>all</strong> pictures
+      including the ones used in the handlebars sections. There were alot of
+      pictures used and as is the nature of articles/magazines these pictures
+      are widely important. These alt tags will again help those who are
+      visually impaired know about the picture through the use of a screen
+      reader, or if for some reason the picture is unable to be accessed by the
+      client's device, it will give a description of what should be there.
+    </p>
+    <br />
+
+    <h3>Usability</h3>
+    <p>
+      One of the things I most considered in terms of usability was the ease of
+      traversing through the website from each and every page. In the home page
+      the visitor is able to go through every page whether through the
+      navigation bar, which highlights the current page you are on, the news
+      footer which shows random articles and takes you straight to the article
+      you click on, or the subscribe button which takes you to the sign up form.
+      The articles all have links in the top left corner which allow them to go
+      back to either the Latest on Lakers page or back to the home page. The
+      news footer also appears in every part of the site except for the Latest
+      on Lakers page as it seemed redundant. This helps in guiding the visitor
+      to the articles section of the website.
+    </p>
+
+    <br />
+    <p>
+      Another aspect of usability is the responsiveness of the website. While it
+      is incredibly difficult and tedious to account for literally every screen
+      size, I feel confident in saying that I did a relatively good job
+      accounting for my screen size and all those below it. Those who are using
+      tablets and phones will have a responsive collapsible navbar, adjusted
+      text and image sizes, as well as adjusted displays for the news footer,
+      Latest On Lakers page, and draft page.
+    </p>
+    <br />
+    <p>
+      Finally, a lot of the interactables are incredibly intuitive due to the
+      use of the hover pseudo selector in CSS, all buttons, navigable links, and
+      clickable widgets show their usability through changing color and or size
+      when hovered upon. This greatly increases the ease of figuring how to
+      traverse the site and use its intended features.
+    </p>
+
+    <h3>Learning</h3>
+    <p>
+      I had to learn how to use Handlebars to make this website as it would not
+      just make my life easier through the convenience that templating engines
+      provide, but also because it was part of the rubric and an essential part
+      of client side development. I had a hard time following the coursera
+      videos, so after some private learning with my professors during his
+      office hours as well as self research with some Youtube videos, I was able
+      to not just figure it out but leverage its abilities to make neater more
+      expandable components in my website.
+    </p>
+    <br />
+    <p>
+      In learning Handlebars, I also naturally had to learn DOM manipulation. If
+      I wanted to use Handlebars I would have to know how to use Javascript to
+      manipulate the target HTML page. While the videos helped, I actually took
+      an external online course titled “The Complete Web Developer in 2023: Zero
+      To Mastery” in Udemy by Andrei Neagoie. This helped me learn how to
+      leverage getting different elements in the DOM and using them as variables
+      for further manipulation.
+    </p>
+    <br />
+    <p>
+      Finally, I learned about the different aspects of accessibility that I did
+      not learn or use in the last project. I had to learn through different
+      blogs, newsletters and posts about not just the importance of accessible
+      design, but also how to achieve it. I learned about aria-labels,
+      accessible HTML semantics, and the alt property for images. All these were
+      used liberally in my site to help make it more accessible.
+    </p>
+    <br />
+
+    <h3>Evaluation I</h3>
+    <p>
+      One of the most successful parts of the project was the incorporation of
+      Handlebars with DOM manipulation to have a cleaner and tidier HTML page.
+      Instead of laboring to copy and paste code to manually reuse templates for
+      different pieces of information, I learned to use a templating engine like
+      Handlebars to do it for me. This especially came in handy with the nature
+      of a magazine site. The news footer, our team section, Latest On Lakers
+      page, and carousel are just some of the examples of how Handlebars really
+      made life easier, and my HTML neater through the use of for loops,
+      templating and DOM manipulation.
+    </p>
+    <br />
+    <p>
+      I also used a lot of different ways to make CSS layouts. In this project I
+      was able to use display grid, flex, and none. I was also able to
+      incorporate bootstrap's grid system, as well as use things like absolute
+      and relative positioning. While we learnt this in the previous group
+      project, I did find that my ability and confidence to use these tools are
+      a lot greater now than it was before. This helped make an interesting
+      layout that fit my website's theme and follows responsive behavior.
+    </p>
+    <br />
+    <p>
+      Finally, I believe my use of Javascript logic in the website made for an
+      interactive website that also displayed my programming skill and
+      knowledge. I traversed complex data structures, used nested for loops, and
+      made closure functions all of which were not trivial but actually played a
+      big role in the functionality of the website. I also used the new ES6
+      syntax such as the arrow functions and “for of” loops where appropriate.
+    </p>
+    <br />
+    <h3>Evaluation II</h3>
+    <p>
+      The biggest area of improvement is definitely my creativity in terms of
+      design. I have never been a very artsy person, and so the idea of color
+      theory, symmetrical proportions, and things of that nature never really
+      clicked for me. I used a standard Lakers color palette, made a standard
+      layout for most of my pages, and didn't do anything extraordinarily
+      creative. I made this website how I view myself personally, it doesn't
+      dabble in the creative, but it gets the job done. I believe my website
+      does what it needs to do, but fails artistically next to a site with a
+      more gifted designer. Next time I would definitely try to be more creative
+      and just unique with my different layouts, designs, and color choices
+      instead of sticking to what is “safe”.
+    </p>
+    <br />
+    <p>
+      I also believe my website could be more accessible, and more responsive.
+      Unfortunately one person cannot account for all the different screen sizes
+      and how the website would respond to each of them. I mostly accounted for
+      responsiveness from my 15.6 inch screen and under, however I realize that
+      now websites are able to be opened on larger desktops and things of that
+      nature. Next time I will definitely try and accommodate for those larger
+      screen sizes.
+    </p>
+
+    <h2>Resources</h2>
+    <p>
+      [1] Handlebarsjs.com, 'Handlebars Reference', 2021. [Online]. Available:
+      https://cdnjs.com/libraries/handlebars.js. [Accessed: 3- Feb- 2023]
+    </p>
+    <p>
+      [2] getbootstrap.com, 'Get Started With Bootstrap', 2022. [Online].
+      Available: https://getbootstrap.com/docs/5.2/getting-started/download/.
+      [Accessed: 29- Jan- 2023]
+    </p>
+    <p>
+      [3] fontawesome.com, 'Font Awesome', 2023. [Online]. Available:
+      https://cdnjs.com/libraries/font-awesome. [Accessed: 30- Jan- 2023]
+    </p>
+    <p>
+      [4] fontawesome.com, 'Font Awesome', 2023. [Online]. Available:
+      https://cdnjs.com/libraries/font-awesome. [Accessed: 30- Jan- 2023]
+    </p>
+    <p>
+      [5] DC. Corzine, 'Lakers fan art', 2021. [Online].Available:
+      https://www.artstation.com/artwork/rAZ3V2. [Accessed: 31-Jan- 2023].
+    </p>
+    <p>
+      [6] Teepublic.com, 2022. [Online]. Available:
+      https://www.teepublic.com/poster-and-art/4828725-la-retro-ball-purple.
+      [Accessed: 31- Jan- 2023].
+    </p>
+    <p>
+      [7] DS. Daniel Starkand, Lakersnation.com, 'Recap: Shorthanded Lakers Fall
+      To Nets On Road Despite Coming Back From 19 Down', 2023. [Online].
+      Available:
+      https://lakersnation.com/recap-lakers-lose-to-celtics-in-overtime-again-after-lebron-james-foul-not-called-at-end-of-regulation/2023/01/28/.
+      [Accessed: 3- Feb- 2023].
+    </p>
+    <p>
+      [8] CH. Corey Hansford, Lakersnation.com, 'Lakers Vs. Celtics Preview:
+      L.A. Kicks Off Five-Game Road Trip Against Hated Rivals', 2023. [Online].
+      Available:
+      https://lakersnation.com/lakers-vs-celtics-preview-l-a-kicks-off-five-game-road-trip-against-hated-rivals/2023/01/28/.
+      [Accessed: 5- Feb- 2023].
+    </p>
+    <p>
+      [9] DS. Daniel Starkand, Lakersnation.com, 'Recap: Lakers Lose To Celtics
+      In Overtime Again After LeBron James Foul Not Called At End Of
+      Regulation', 2023. [Online]. Available:
+      https://lakersnation.com/recap-lakers-lose-to-celtics-in-overtime-again-after-lebron-james-foul-not-called-at-end-of-regulation/2023/01/28/.
+      [Accessed: 6- Feb- 2023].
+    </p>
+    <p>
+      [10] Foxsports.com, 'LAKERS HOST NUGGETS & WIZARDS BEFORE TWO GAME ROAD
+      TRIP VS. KINGS & SUNS | UNDISPUTED', 2023. [Online]. Available:
+      https://www.foxsports.com/watch/play-617c475a700004b. [Accessed: 4- Feb-
+      2023].
+    </p>
+    <p>
+      [11] MC. Michael Corvo, Clutchpoints.com, 'Full 2022 NBA offseason grades
+      for Los Angeles Lakers', 2022. [Online]. Available:
+      https://clutchpoints.com/full-2022-nba-offseason-grades-for-los-angeles-lakers.
+      [Accessed: 5- Feb- 2023].
+    </p>
+    <p>
+      [12] NBA.com, 'NBA Players', 2023. [Online]. Available:
+      'https://www.nba.com/player/203076/anthony-davis'. [Accessed: 6- Feb-
+      2023].
+    </p>
+    <p>
+      [13] NBA.com, 'NBA Players', 2023. [Online]. Available:
+      'https://www.nba.com/player/2544/lebron-james'. [Accessed: 6- Feb- 2023].
+    </p>
+    <p>
+      [14] NBA.com, 'NBA Players', 2023. [Online]. Available:
+      'https://www.nba.com/player/201566/russell-westbrook'. [Accessed: 6- Feb-
+      2023].
+    </p>
+    <p>
+      [15] NBA.com, 'NBA Players', 2023. [Online]. Available:
+      https://www.nba.com/player/1629022/lonnie-walker-iv'. [Accessed: 6- Feb-
+      2023].
+    </p>
+    <p>
+      [16] NBA.com, 'NBA Players', 2023. [Online]. Available:
+      'https://www.nba.com/player/1631108/max-christie'. [Accessed: 6- Feb-
+      2023].
+    </p>
+    <p>
+      [17] NBA.com, 'NBA Players', 2023. [Online]. Available:
+      'https://www.nba.com/player/1630559/austin-reaves'. [Accessed: 6- Feb-
+      2023].
+    </p>
+    <p>
+      [18] NBA.com, 'NBA Players', 2023. [Online]. Available:
+      'https://www.nba.com/player/201976/patrick-beverley'. [Accessed: 6- Feb-
+      2023].
+    </p>
+    <p>
+      [19] RM. Robert Marvi, sports.yahoo.com, 'Lakers vs. Nets: Stream,
+      lineups, injuries and viewing info for Sunday', 2022. [Online]. Available:
+      https://sports.yahoo.com/lakers-vs-nets-stream-lineups-170037404.html.
+      [Accessed: 5- Feb- 2023].
+    </p>
+    <p>
+      [20] NBA.com, 'Gallery: Nets vs. Lakers', 2023. [Online]. Available:
+      'https://www.nba.com/nets/photos/gallery-nets-vs-lakers-2023-01-30'.
+      [Accessed: 3- Feb- 2023].
+    </p>
+    <p>
+      [21] CS. Chris Smoove, Youtube.com, 'Russell Westbrook Traded to Lakers!
+      2021 NBA Free Agency', 2021. [Online]. Available:
+      'https://www.youtube.com/watch?v=FkhJX1vRlqs'. [Accessed: 4- Feb- 2023].
+    </p>
+    <p>
+      [22] JSM, Youtube.com, 'Lakers Top 5 Trades to UPGRADE From Russell
+      Westbrook at the Trade Deadline! Lakers BEST Options!', 2023. [Online].
+      Available:
+      'https://www.youtube.com/watch?v=IuMkZ2gIrwc&source_ve_path=MjM4NTE&feature=emb_title'.
+      [Accessed: 4- Feb- 2023].
+    </p>
+    <p>
+      [23] JL. Justin Leger, nbcsports.com, 'Lakers voice frustration with
+      controversial no-call in loss to C's', 2023. [Online]. Available:
+      'https://www.nbcsports.com/boston/celtics/lakers-voice-frustration-controversial-no-call-loss-celtics'.
+      [Accessed: 5- Feb- 2023].
+    </p>
+    <p>
+      [24] HF. Harrison Faigen, silverscreenandroll.com, 'Anthony Davis says
+      what even NBA admits: Lakers were 'cheated' by refs on 'bulls---' call ',
+      2023. [Online]. Available:
+      'https://www.silverscreenandroll.com/2023/1/28/23576250/lakers-vs-celtics-final-score-missed-call-lebron-james-jayson-tatum-foul-anthony-davis-video'.
+      [Accessed: 5- Feb- 2023].
+    </p>
+    <p>
+      [25] SC. Souichi Terada, masslive.com, 'Everything Lakers' LeBron James
+      said after Celtics loss, missed foul: 'It's ridiculous'', 2023. [Online].
+      Available:
+      'https://www.masslive.com/celtics/2023/01/everything-lakers-lebron-james-said-after-celtics-loss-missed-foul-its-ridiculous.html'.
+      [Accessed: 5- Feb- 2023].
+    </p>
+    <p>
+      [26] SP. Shaun Powell, NBA.com, '10 takeaways as Lakers edge Celtics in
+      early-season clash', 2021. [Online]. Available:
+      'https://www.nba.com/news/10-takeaways-as-lakers-edge-celtics-in-early-season-clash'.
+      [Accessed: 5- Feb- 2023].
+    </p>
+    <p>
+      [27] M. Megan, NewBulletin247.com, 'The Celtics took the derby with the
+      Lakers to overtime, despite LeBron's “41”', 2023. [Online]. Available:
+      'https://newsbulletin247.com/sports/257528.html'. [Accessed: 5- Feb-
+      2023].
+    </p>
+    <p>
+      [28] KI. Kyle Irving, NBA.com, 'Lakers vs. Celtics results, highlights:
+      Jayson Tatum's MVP performance leads Boston past Los Angeles in chaotic
+      overtime comeback', 2022. [Online]. Available:
+      'https://www.sportingnews.com/in/nba/news/lakers-celtics-live-score-results-highlights-lebron-james-jayson-tatum/da8waz9kr8wu1k5qkkuxvpwq'.
+      [Accessed: 5- Feb- 2023].
+    </p>
+    <p>
+      [29] JB. Jack Baer, sports.yahoo.com, 'Celtics pull out wild OT win after
+      exchanging 4th-quarter collapses with Lakers ', 2023. [Online]. Available:
+      'https://sports.yahoo.com/lakers-vs-nets-stream-lineups-170037404.html'.
+      [Accessed: 5- Feb- 2023].
+    </p>
+    <p>
+      [30] Lakersnation.com, 'Lakers Future Draft Picks: Upcoming 1st & 2nd
+      Round Draft Picks', 2023. [Online]. Available:
+      'https://lakersnation.com/lakers-future-first-and-second-round-draft-picks/'.
+      [Accessed: 5- Feb- 2023].
+    </p>
+    <p>
+      [31] Pixabay.com, 'Portrait Man guy', 2023. [Online]. Available:
+      'https://pixabay.com/illustrations/portrait-man-guy-person-face-male-6309448/'.
+      [Accessed: 1- Feb- 2023].
+    </p>
+    <p>
+      [32] thispersondoesnotexist.com, 'this person does not exist', 2020.
+      [Online]. Available: 'https://thispersondoesnotexist.com/'. [Accessed: 1-
+      Feb- 2023].
+    </p>
+
+    <h1>
+        Appendices
+    </h1>
+    <h3>site map</h3>
+    <img src="SiteMap.jpg">
+    <h3>WireFrames</h3>
+    <h4>Home Page</h4>
+    <img src="Wireframes/Home Page.jpg">
+    <h4>articleSampleType1</h4>
+    <img src="Wireframes/articleSampleType1.jpg">
+    <h4>ArticleSampleType2</h4>
+    <img src="Wireframes/articleSampleType2.jpg">
+    <h4>Draft Page</h4>
+    <img src="Wireframes/Draft Page.jpg">
+    <h4>Sign up Page</h4>
+    <img src="Wireframes/Sign up Page.jpg">
+
+    <h3>MockUps</h3>
+    <h4>home page</h4>
+    <img src="Mockups/Home Page.png">
+    <h4>home page smaller screens</h4>
+    <img src="Mockups/Home Page(smaller screen).png">
+    <h4>Latest On Lakers Page</h4>
+    <img src="Mockups/Latest On Lakers.png">
+    <h4>Latest On Lakers Page smaller screens</h4>
+    <img src="Mockups/Latest on Lakers(smaller screen).png">
+    <h4>Article 1 (Sampletype1)</h4>
+    <img src="Mockups/Article1(sample type1).png">
+    <h4>Article 1 (Sampletype1) (smaller screen)</h4>
+    <img src="Mockups/Article1 (sampletype1) (smaller screen).png">
+    <h4>Article 2 (Sampletype2)</h4>
+    <img src="Mockups/Article2(sampletype2).png">
+    <h4>Article 2 (Sampletype2) (smaller screen)</h4>
+    <img src="Mockups/article2 (sampletype2) (smaller screen).png">
+    <h4>Article 3 (Sampletype1)</h4>
+    <img src="Mockups/article3 (sampletype2).png">
+    <h4>Article 3 (Sampletype1) (smaller screen)</h4>
+    <img src="Mockups/article3 (sampletype2) (smaller screen).png">
+    <h4>Article 4 (Sampletype1)</h4>
+    <img src="Mockups/Article4 (sampletype1).png">
+    <h4>Article 4 (Sampletype1) (smaller screen)</h4>
+    <img src="Mockups/article4 (sampletype1) (smaller screen).png">
+    <h4>Article 5 (Sampletype1)</h4>
+    <img src="Mockups/article5 (sampletype1).png">
+    <h4>Article 5 (Sampletype1) (smaller screen)</h4>
+    <img src="Mockups/article5 (sampletype1) (smaller screen).png">
+
+    <script src="" async defer></script>
+  </body>
+</html>

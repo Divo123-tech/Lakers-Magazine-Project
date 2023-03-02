@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LAKERSPRIDE | ARTICLE</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- google fonts api  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!-- handlebars cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- card template -->
+    <script id="card-players-template" type="text/x-handlebars-javascript">
+      <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="img/playerProfiles/{{imgSrc}}"
+              alt="picture of {{name}}"
+              class="profileImg"
+            />
+          </div>
+          <div class="flip-card-back">
+            <div class="card-text">
+              <h1>{{name}}</h1>
+              <p>{{profile}}</p>
+              <p>{{boxscore}}</p>
+              <p>{{splits}}</p>
+              <p>{{games}} Games Played</p>
+              <p>${{contract}} million contract</p>
+            </div>
+          </div>
+        </div>
+    </script>
+
+    <!-- news footer template -->
+    <script id="news-footer-template" type="text/x-handlebars-javascript">
+      <a href={{articleLink}}>
+        <img src={{imgSrc}} class="news-footer-img" alt="picture of {{title}}">
+      </a>
+      <a href={{articleLink}}>
+        <div class="news-footer-text">
+          <h5>{{title}}</h5>
+          <p> {{desc}}
+          </p>
+        </div>
+      </a>
+    </script>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <!-- adopted bootstrap navigation bar -->
+      <nav aria-label="Main Navigation" role="navigation" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">LAKERS PRIDE</a>
+          <img
+            class="brandLogo"
+            src="img/BrandLogo.png"
+            alt="spinning yellow and purple basketball"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  ><i class="fa-solid fa-house"></i> HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current-page" href="latest.html"
+                  ><i class="fa-regular fa-newspaper"></i> LATEST ON LAKERS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="draft.html"
+                  ><i class="fa-solid fa-basketball"></i> DRAFT</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sign-up" href="signup.html"
+                  ><i class="fa-solid fa-pen"></i> SIGN UP</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- NAVIGATION -->
+
+    <!-- root text -->
+    <p class="root-text">
+      <a class="root-link" href="index.html">Home</a> >
+      <a class="root-link" href="latest.html">Latest On Lakers</a> >
+      <a class="root-link" href="article3(sampletype2).html"
+        >Who Will be Traded For the Lakers?</a
+      >
+    </p>
+    <!-- article       -->
+    <article>
+    <div class="article-page">
+      <h1 class="article-page-title">Who Will be Traded For the Lakers?</h1>
+      <img src="img/news3.jpeg" class="main-image" alt="picture of all the new lakers from the 2022 offseason"/>
+
+      <!-- article page details -->
+      <div class="article-page-details">
+        <i class="fa-solid fa-pen-nib"></i> Michelle Jones |
+        <i class="fa-solid fa-calendar"></i> 04/02/2023 |
+        <i class="fa-solid fa-clock"></i> 4 minute read
+      </div>
+
+      <!-- article body text -->
+      <div class="article-page-body-text">
+        <p>
+          The trade deadline is getting closer, and the Lakers are in desperate
+          need of help, who will stay and who will go? The Lakers have contended
+          with top teams in both conferences despite facing injuries and fit
+          issues with their guard heavy lineups. While they have pulled the
+          trigger on Rui Hachimura, its clear this team needs more help, and
+          with those first round picks still being there, who will the Lakers
+          trade before the deadline?
+        </p>
+        <br />
+        <p>
+          The Lakers have been actively searching for help especially in terms
+          of wing depth and shooting. With the acquisition of Rui Hachimura for
+          Kendrick Nunn they've managed to restore some balance in their
+          guard-heavy roster, however if they want to truly contend, that cannot
+          be the only move they make. While the Lakers do not have much in terms
+          of assets, they do have 5 players that teams around the league either
+          see value in, or just have contracts large enough to bring significant
+          return. The most obvious of which is Russell Westbrook.
+        </p>
+        <br />
+
+        <!-- article video -->
+        <div class="body-video-container">
+          <iframe
+            class="body-video"
+            src="https://www.youtube.com/embed/IuMkZ2gIrwc"
+          ></iframe>
+          <p class="body-media-credit">
+            <i class="fa-solid fa-camera-retro"></i><em> JSM</em>
+          </p>
+        </div>
+        <p>
+          Though Russ is definitely the fan favorite to be traded, especially
+          since the resurgence of Patrick Beverley, he is not the only person
+          that could be traded. If the Lakers were to find themselves stuck, as
+          in teams are unwilling to even trade for Russ unless both first round
+          picks are included regardless of the quality of return, then they
+          might decide to make a move on the margins instead. This would mean
+          trading one of their smaller contracts in hope of bringing a role
+          player that could fit well with their big 3
+        </p>
+        <br />
+        <p>
+          This would save them some draft compensation as the return they would
+          get for these players likely won't be as valuable as it would be if
+          they traded for Russ. This could lend them some flexibility in the
+          summer as they would then have 3 first round picks to play with.
+        </p>
+        <br />
+
+        <!-- article cards -->
+        <div class="card-container"></div>
+        <div class="card-info-container">
+          <p><em>Hover to flip!</em></p>
+        </div>
+        <p>
+          Above you can see the stats of the Lakers' 5 most tradeable players.
+          First we have the aforementioned Russell Westbrook whose large
+          contract could be an avenue for the Lakers to make a splashy moves
+          were they to include their 2 first round picks. Next we have Patrick
+          Beverley, the Lakers' summer acquisition. While he has been playing
+          better, he does have the most tradeable contract, and is on an
+          expiring deal. Unfortunately he has very little trade value so he
+          would most likely be trade filler
+        </p>
+        <br />
+        <p>
+          Now we have Lonnie Walker the IV whose in an interesting position to
+          say the least. He is a young athletic wing who can shoot the 3,
+          however he is on the last year of his deal, and has just come back
+          from a knee injury. His salary is also quite small compared to that of
+          Patrick Beverly and Westbrook's. While Walker could be an interesting
+          addition to a deal to stack up salaries, its unclear how much other
+          teams value him
+        </p>
+        <br />
+        <p>
+          Reaves and Christie both if traded can act as sweetener. Their very
+          small salary makes them impossible to trade on their own, however, if
+          the Lakers were to go for a splashy player, then these two could be
+          included along or instead of their picks to sweeten the deal for
+          another team due to their youth and potential as 3 and D wings.
+        </p>
+      </div>
+    </div>
+  </article>
+
+    <!-- news footer -->
+    <hr class="home-hr" />
+    <a class="news-footer-title" href="latest.html"
+      ><h1>Related Articles</h1></a
+    >
+    <div class="news-footer row"></div>
+
+    <!-- footer -->
+    <footer>
+      <p id="followus">Follow us on Socials!</p>
+      <div class="row">
+        <div class="col smlinks">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+      </div>
+      <p id="copyright">© Copyright 2024</p>
+    </footer>
+    <!-- footer -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/articletemplate2.js"></script>
+    <script>
+      article3CardGenerate();
+    </script>
+    <script src="js/newsFooter.js">
+
+    </script>
+  </body>
+</html>

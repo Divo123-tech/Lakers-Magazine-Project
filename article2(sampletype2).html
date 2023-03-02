@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LAKERSPRIDE | ARTICLE</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- google fonts api  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!-- handlebars cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- card template -->
+    <script id="card-players-template" type="text/x-handlebars-javascript">
+      <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="img/playerProfiles/{{imgSrc}}"
+              alt="picture of {{name}}"
+              class="profileImg"
+            />
+          </div>
+          <div class="flip-card-back">
+            <div class="card-text">
+              <h1>{{name}}</h1>
+              <p>{{profile}}</p>
+              <p>{{boxscore}}</p>
+              <p>{{splits}}</p>
+              <p>{{games}} Games Played</p>
+              <p>${{contract}} million contract</p>
+            </div>
+          </div>
+        </div>
+    </script>
+
+    <!-- news footer template -->
+    <script id="news-footer-template" type="text/x-handlebars-javascript">
+      <a href={{articleLink}}>
+        <img src={{imgSrc}} class="news-footer-img" alt="picture of {{title}}">
+      </a>
+      <a href={{articleLink}}>
+        <div class="news-footer-text">
+          <h5>{{title}}</h5>
+          <p> {{desc}}
+          </p>
+        </div>
+      </a>
+    </script>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <!-- adopted bootstrap navigation bar -->
+      <nav aria-label="Main Navigation" role="navigation" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">LAKERS PRIDE</a>
+          <img
+            class="brandLogo"
+            src="img/BrandLogo.png"
+            alt="spinning yellow and purple basketball"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  ><i class="fa-solid fa-house"></i> HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current-page" href="latest.html"
+                  ><i class="fa-regular fa-newspaper"></i> LATEST ON LAKERS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="draft.html"
+                  ><i class="fa-solid fa-basketball"></i> DRAFT</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sign-up" href="signup.html"
+                  ><i class="fa-solid fa-pen"></i> SIGN UP</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- NAVIGATION -->
+
+    <!-- root text -->
+    <p class="root-text">
+      <a class="root-link" href="index.html">Home</a> >
+      <a class="root-link" href="latest.html">Latest On Lakers</a> >
+      <a class="root-link" href="article2(sampletype2).html"
+        >Will the Lakers Keep Their Big 3?</a
+      >
+    </p>
+    <!-- article       -->
+    <article>
+    <div class="article-page">
+      <h1 class="article-page-title">Will the Lakers Keep Their Big 3?</h1>
+      <img src="img/news2.jpg" class="main-image" alt="picture of Lebron, Westbrook, and Anthony Davis"/>
+
+      <!-- article page details -->
+      <div class="article-page-details">
+        <i class="fa-solid fa-pen-nib"></i> Peter Henderson |
+        <i class="fa-solid fa-calendar"></i> 04/02/2023 |
+        <i class="fa-solid fa-clock"></i> 2 minute read
+      </div>
+
+      <!-- article body text -->
+      <div class="article-page-body-text">
+        <p>
+          With the Lakers continuing to struggle, will Pelinka pull the trigger
+          on a Russell Westbrook trade despite having to put in their first
+          round picks? It has been no secret that the Lakers have been trying to
+          shop Russell Westbrook ever since the trade deadline last season.
+          While it may have not been an issue last season, the progress of Russ
+          as a productive basketball player for the Lakers makes the price of
+          two first round picks that much harder to swallow.
+        </p>
+        <br />
+        <p>
+          The trio of players was originally brought in on the 2021 off-season
+          when the Lakers traded Kyle Kuzma, Kentavious Caldwell Pope, Montrez
+          Harell and a 2021 first round pick to the Washington Wizards for
+          Russell Westbrook and 3 second round picks. The hope was that with
+          Russ' proven ability to carry a subpar squad into play off contention,
+          Lebron and AD could afford to take time off during the regular season
+          to rest for when the playoffs come around. This however was not the
+          case, and the lack of shooting, defense, and overall fit caused the
+          team to miss the playoffs in Russ' debut season.
+        </p>
+        <br />
+
+        <!-- article video -->
+        <div class="body-video-container">
+          <iframe
+            class="body-video"
+            src="https://www.youtube.com/embed/FkhJX1vRlqs"
+          ></iframe>
+          <p class="body-media-credit">
+            <i class="fa-solid fa-camera-retro"></i><em>Chris Smoove</em>
+          </p>
+        </div>
+        <p>
+          During the controversial season trade rumours swirled around the
+          Lakers for quite literally every player on the roster. The most common
+          trade target for the Lakers was ofcourse Russell Westbrook, with fans
+          begging Rob Pelinka to trade him for anything they could get. The
+          other most commonly rumoured player was THT, due to his age and
+          tradeable salary. However some fans took it a step further and asked
+          to trade Lebron and Anthony Davis, arguing that the Lakers had gotten
+          what they needed with those players and that it was time for a
+          rebuild.
+        </p>
+        <br />
+        <p>
+          That season the Lakers stood pat and didn't trade any players before
+          the deadline, opting instead to try and make moves during the summer.
+          That summer they fired head coach Frank Vogel and signed rookie head
+          coach Darvin Ham. They then traded Talen Horton Tucker and Stanley
+          Johnson for veteran Patrick Beverley. Finally, they signed a plethora
+          of free agents like Thomas Bryant, Dennis Schroder, and Lonnie Walker.
+          Despite the clear improvement from last year's roster, the Lakers are
+          still struggling sitting 13th in the highly competitive Western
+          Conference. As the trade deadline looms, and with both their first
+          round picks still with them, how will they move forward with their big
+          3?
+        </p>
+        <br />
+
+        <!-- article cards -->
+        <div class="card-container"></div>
+        <div class="card-info-container">
+          <p><em>Hover to flip!</em></p>
+        </div>
+        <p>
+          Above you can see the stats of the Lakers' big 3 this season.
+          Unfortunately for the trade LeBron crowd, due to his new extension he
+          is unable to be traded, and with his MVP level performance this year,
+          its unlikely that the Lakers would've traded him anyways.
+        </p>
+        <br />
+        <p>
+          Anthony Davis, while widely regarded as safe due to his connection
+          with LeBron, has had a history of linguring injuries which has limited
+          him to only 30 games this season. He is however their defensive anchor
+          and helped them win their 2020 title so he can be most likely be ruled
+          out of getting traded.
+        </p>
+        <br />
+        <p>
+          Russ in the other hand we cannot be so sure about. While arguments can
+          be made on him staying, whether it be his off the bench production, as
+          well as other team's unwillingness to trade fairly with the Lakers for
+          him, it is almost a guaruntee that he will leave this season. The
+          Lakers will operate as an over the cap team regardless of whether or
+          not Russell Westbrook stays or goes, if they want to improve their
+          roster, they are going to need his $47 million salary to match
+          contracts in trades.
+        </p>
+      </div>
+    </div>
+  </article>
+
+    <!-- news footer -->
+    <hr class="home-hr" />
+    <a class="news-footer-title" href="latest.html"
+      ><h1>Related Articles</h1></a
+    >
+    <div class="news-footer row"></div>
+
+    <!-- footer -->
+    <footer>
+      <p id="followus">Follow us on Socials!</p>
+      <div class="row">
+        <div class="col smlinks">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+      </div>
+      <p id="copyright">© Copyright 2024</p>
+    </footer>
+    <!-- footer -->
+    
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js file -->
+    <script src="js/articletemplate2.js"></script>
+    <script src="js/newsFooter.js"></script>
+    <script>article2CardGenerate()</script>
+  </body>
+</html>

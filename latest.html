@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LAKERSPRIDE | LATEST</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- google fonts api  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap"
+    rel="stylesheet"
+    />
+    <!-- bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!-- handlebars cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- handlebars templates -->
+    <script id="articles-list-template" type="text/x-handlebars-javascript">
+        <a href="{{articleLink}}"><img src="{{imgSrc}}" class="news-image" alt="image related to the news title"> </a>
+        <a href="{{articleLink}}">  
+          <div class="article-text">
+          <h2 class="article-title">{{title}}</h2>
+          <p class="article-info">
+            <i class="fa-solid fa-pen-nib"></i> {{writer}} | 
+            <i class="fa-solid fa-calendar"></i> {{date}} |
+            <i class="fa-solid fa-clock"></i> {{time}} minute read
+          </p>
+          <p class="article-caption">{{desc}}
+          </p>
+        </div>
+          <hr class="latest-hr">
+        </a>
+    </script>
+
+
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <!-- adopted bootstrap navigation bar -->
+        <nav aria-label="Main Navigation" role="navigation" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">LAKERS PRIDE</a>
+            <img class="brandLogo" src="img/BrandLogo.png" alt="spinning yellow and purple basketball" />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    ><i class="fa-solid fa-house"></i> HOME</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link current-page" href="latest.html"
+                    ><i class="fa-regular fa-newspaper"></i> LATEST ON LAKERS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="draft.html"
+                    ><i class="fa-solid fa-basketball"></i> DRAFT</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link sign-up" href="signup.html"
+                    ><i class="fa-solid fa-pen"></i> SIGN UP</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <!-- NAVIGATION -->
+    
+    <!-- Latest On Lakers articles list -->
+    <main>
+      <section aria-label="Articles List">
+        <div id="Latest-On-Lakers">
+
+        </div>
+        <div class="read-more">
+          <a href="#followus"><i class="fa-solid fa-chevron-down read-more-button"></i></a>
+          </div>
+      </section>
+    </main>
+
+        <!-- footer -->
+        <footer>
+          <p id="followus">Follow us on Socials!</p>
+          <div class="row">
+            <div class="col smlinks">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-tiktok"></i>
+            </div>
+          </div>
+          <p id="copyright">© Copyright 2024</p>
+        </footer>
+        <!-- footer -->
+        
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js file -->
+    <script src="js/latest.js"></script>
+  </body>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LAKERSPRIDE | SIGN UP</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- google fonts api  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!-- handlebars cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- news footer template -->
+    <script id="news-footer-template" type="text/x-handlebars-javascript">
+      <a href={{articleLink}}>
+        <img src={{imgSrc}} class="news-footer-img" alt="picture of {{title}}">
+      </a>
+      <a href={{articleLink}}>
+        <div class="news-footer-text">
+          <h5>{{title}}</h5>
+          <p> {{desc}}
+          </p>
+        </div>
+      </a>
+    </script>
+    <!-- news footer template -->
+    <script id="news-footer-template" type="text/x-handlebars-javascript">
+      <a href={{articleLink}}>
+        <img src={{imgSrc}} class="news-footer-img" alt="picture of {{title}}">
+      </a>
+      <a href={{articleLink}}>
+        <div class="news-footer-text">
+          <h5>{{title}}</h5>
+          <p> {{desc}}
+          </p>
+        </div>
+      </a>
+    </script>
+</head>
+<body>
+<!-- NAVIGATION -->
+<header>
+  <!-- adopted bootstrap navigation bar -->
+    <nav aria-label="Main Navigation" role="navigation" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">LAKERS PRIDE</a>
+        <img
+          class="brandLogo"
+          src="img/BrandLogo.png"
+          alt="spinning yellow and purple basketball"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                ><i class="fa-solid fa-house"></i> HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="latest.html"
+                ><i class="fa-regular fa-newspaper"></i> LATEST ON LAKERS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="draft.html"
+                ><i class="fa-solid fa-basketball"></i> DRAFT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current-page sign-up" href="signup.html"
+                ><i class="fa-solid fa-pen"></i> SIGN UP</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- NAVIGATION -->
+
+  <section>
+    <div class="sign-up-container">
+        <div class="sign-up-text">
+            <h1 class="sign-up-title">Sign Up To Our NewsLetter!</h1>
+            <p class="sign-up-desc"><em>Get weekly news, updates and rumours on your LA Lakers</em> </p>
+        </div>
+        <form class="sign-up-form">
+            <div class="form-container">
+                <div id = "email-container" class="label-container">
+                <label for = "email" class="label">EMAIL</label><br>
+                </div>
+                <p id="emailError" class="errorMessage none">Please enter a valid email address!</p>
+                <input type="email" id="emailInput" placeholder="@gmail.com" class="input"><br>
+                <div id ="name-container" class="label-container">
+                <label for = "name" class="label">NAME</label><br>
+                </div>
+                <p id="nameError" class="errorMessage none">Please enter a name for us to use!</p>
+                <input type="text" id="nameInput" class="input"><br>
+                <div class="sign-up-tnc-container">
+                <p id="tncError" class="errorMessage none">Please confirm that you have read this!</p>
+                <p class="tnc-desc"><input id="tnc-checkbox" type="checkbox"> I have read and agreed to the <a>terms and conditions</a></p>
+                </div>
+                <button type="button" id="submitbutton" class="btn btn-warning sign-up-button">SUBMIT</button>
+        </form>
+        <h2 id="successMessage" class="none"></h2>
+    </div>
+  </section>
+  <hr class="home-hr" />
+  <a class="news-footer-title" href="latest.html"
+    ><h1>Related Articles</h1></a
+  >
+  <div class="news-footer row"></div>
+      <!-- footer -->
+      <footer>
+        <p id="followus">Follow us on Socials!</p>
+        <div class="row">
+          <div class="col smlinks">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+        <p id="copyright">© Copyright 2024</p>
+      </footer>
+      <!-- footer -->
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/signup.js"></script>
+  <script src="js/newsFooter.js"></script>
+</body>

@@ -1,0 +1,1050 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-x: hidden
+}
+/* navigation  *//* navigation  *//* navigation  *//* navigation  *//* navigation  */
+.nav-item{
+    margin-left: 45px;
+    font-size: 1.4rem;
+}
+
+.navbar-brand{
+    margin-left: 40px;
+    font-size: 2.5rem;
+    z-index: 2;
+    color:#FDB927;
+    font-family: 'Anton', sans-serif;
+}
+
+.navbar-brand:hover{
+    color:white;
+    transform: scale(1.3);
+}
+
+.navbar{
+    background-color: #552583;
+}
+
+.nav-link{
+    color:#FDB927;
+    font-family: 'Anton', sans-serif;
+}
+
+.nav-link:hover{
+    color:white;
+    transform: scale(1.2);
+}
+
+.brandLogo{
+    z-index: 1;
+    position:absolute;
+    left: 95px;
+    height: 115px;
+    opacity: 0.6;
+    animation: spin;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+.current-page{
+    color: white;
+    font-size:1.7rem;
+}
+
+/* for small laptops and above */
+@media only screen and (min-width: 1080px){
+    .sign-up{
+        position:absolute;
+        right: 100px;
+    }
+    .navbar{
+        height: 120px;
+    }
+}
+
+/* // for the decreased screen size so the nav items dont overlap */
+@media only screen and (min-width: 992px) and (max-width: 1050px){
+    .nav-item{
+        font-size: 1.15rem;
+    }
+    .current-page{
+        font-size: 1.35rem;
+    }
+}
+
+/* for the decreased size of the header */
+@media only screen and (max-width: 1080px){
+    .brandLogo{
+        left: 109px;
+        height: 80px;
+    }
+}
+
+/* for the accordion */
+/* responsive layout of the articles list for tablet devices */
+@media only screen and (max-width: 992px){
+    .brandLogo{
+        top: 3px;
+    }
+    .nav-item{
+        margin-left: 70px;
+        margin-top: 15px;
+    }
+    .nav-link:hover{
+        transform: scale(1.1);
+    }
+}
+
+/* logo animation */
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+/* navigation  *//* navigation  *//* navigation  *//* navigation  *//* navigation  */
+
+/* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
+footer{
+    padding-top: 5px;
+    background-color: #552583;
+    width:100%;
+    height: 120px;
+    text-align: center;
+    color: grey;
+}
+
+#followus{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-family:'Anton', sans-serif ;
+}
+
+#copyright{
+    font-size: 0.7rem;
+}
+
+.smlinks{
+    margin-bottom: 20px;
+    font-size: 28px;
+    color:#FDB927;
+    display: flex;
+    justify-content: center;
+    gap:8vw;
+}
+
+
+.fa-brands:hover{
+    transform: scale(1.2);
+}
+
+/* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
+
+
+
+
+/* home page *//* home page *//* home page *//* home page */
+
+/* aligns the title to the center */
+#title{
+    position: relative;
+    text-align: center;
+}
+
+/* styles the title */
+#title-art{
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    opacity: 0.2;
+}
+
+#main-title{
+    /* positions the title on the image */
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* to get a linear gradient for the title */
+    background:linear-gradient(to bottom, #552583, #FDB927);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Anton', sans-serif;
+}
+
+#main-title > h1{
+    font-size: 9vw
+}
+ /* positions the subtitle on the image */
+#info-title{
+    position:absolute;
+    top:48%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: grey;
+    font-family: "Oswald", sans-serif;
+}
+
+#info-title > h6 {
+    font-size: 1.3rem;
+}
+
+/* positions the call to action on the image */
+#cta-title{ 
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    top:60%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#cta-title > h5{
+    font-size: 1.5rem;
+}
+
+/* positions the button on the image */
+#button-container{
+    position:absolute;
+    top:68%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+/* styles the button and the text */
+.button-title{
+    width:150px;
+    background-color: #552583;
+    color:#FDB927;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+
+/* changes button color when hovered */
+.button-title:hover{
+    background-color: black;
+    color:#FDB927;
+}
+
+/* adjusts size for eveything smaller than a regular tablet */
+@media only screen and (max-width:768px){
+    #info-title > h6{
+        font-size: 0.7rem;
+    }
+    #cta-title > h5{
+        font-size: 1rem;
+    }
+    .button-title{
+        width:110px;
+        font-size: 0.8rem;
+    }
+    #title-art{
+        height:350px;
+    }
+} 
+
+
+
+/* about us *//* about us *//* about us */
+#about-us{
+    padding: 100px 270px;
+    background-color: #FDB927;
+    color:#552583
+}
+
+/* styles and align the about us title */
+#about-us-title{
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+/* styles and aligns the about us text */
+#about-us-desc{
+    font-size: 1.3rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: "Oswald", sans-serif;
+}
+/* responsive layout of the articles list for tablet devices */
+@media only screen and (max-width:992px){
+    #about-us{
+        padding:100px 150px;
+    }
+    #about-us-title{
+        font-size:3rem;
+    }
+
+    #about-us-desc{
+        font-size:1.2rem;
+    }
+}
+
+/* responsive layout for all devices smaller than a regular tablet */
+@media only screen and (max-width:768px){
+    #about-us{
+        padding: 100px 50px;
+    }
+
+    #about-us-desc{
+        font-size:1.1rem;
+    }
+}
+
+/* our team *//* our team *//* our team *//* our team */
+
+/* aligns the our team container */
+#our-team{
+    padding-top: 30px;
+    text-align: center;
+}
+
+/* styles and changes the font of the our team title */
+#our-team-title > h1 {
+    font-size: 5.2rem ;
+    font-family: 'Anton', sans-serif; 
+}
+
+/* makes the headshot round */
+.headshot{
+    border-radius: 50%;
+    height:150px;
+    width:150px;
+}
+
+/* adds margin to each headshot */
+.headshot-container{
+    margin-top:30px;
+}
+
+/* changes the font of the headshot text */
+.headshot-container > p {
+    font-family: "Oswald", sans-serif;
+}
+
+/* styles the hr */
+.home-hr {
+    border: 1px solid grey;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+/* news footer *//* news footer *//* news footer */
+
+/* adds padding to the news footer */
+.news-footer{
+    padding:15px;
+}
+
+/* styles and aligns the news footer title */
+.news-footer-title{
+    text-align: center;
+    font-family: 'Anton', sans-serif; 
+    color:black;
+    text-decoration: none;
+}
+
+/* to remove the styling of the link */
+.news-footer-container > a:link{
+    text-decoration: none;
+    opacity: 1;
+}
+
+/* changes the news footer title when hovered */
+.news-footer-title:hover{
+    color: #552583;
+}
+
+/* changes the color of the news footer from blue to black */
+.news-footer-text{
+    color:black;
+}
+
+/* styles the news footer image to add margin and float the image */
+.news-footer-img{
+    height:125px;
+    float:left;
+    margin-right:15px;
+    margin-left:10px;
+}
+
+/* styles the news footer text */
+.news-footer-text > p{
+    font-size: 0.7rem;
+}
+/* styles the news footer title */
+.news-footer-text > h5{
+    font-size:1.1rem;
+    font-family: "Oswald", sans-serif;
+}
+/* styles the news footer title when hovered*/
+.news-footer-text > h5:hover{
+    text-decoration: underline;
+}
+/* styles the news footer container when hovered*/
+.news-footer-container:hover{
+    transform: scale(1.05);
+    opacity:0.8;
+}
+
+/* for medium sized devices */
+@media only screen and (min-width:800px)and (max-width:1350px){
+    .news-footer-img{
+        float: none;
+    }
+    .news-footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap:1rem;
+        text-align: center;
+    }
+}
+
+/* responsive layout for all devices smaller than a regular tablet */
+@media only screen and (max-width:768px){
+    .news-footer-img{
+        height:75px;
+    }
+
+    /* styles the news footer title */
+    .news-footer-text > h5{
+        font-size:0.9rem;
+    }
+    /* styles the news footer text */
+    .news-footer-text > p{
+        font-size: 0.6rem;
+    }
+
+}
+
+/* LATEST ON LAKERS PAGE *//* LATEST ON LAKERS PAGE *//* LATEST ON LAKERS PAGE *//* LATEST ON LAKERS PAGE *//* LATEST ON LAKERS PAGE */
+
+/* adds padding and aligns content */
+#Latest-On-Lakers{
+    padding:20px;
+    text-align: center;
+}
+
+/* floats the picture of the article left */
+.news-image{
+    height:150px;
+    float:left;
+    margin-right:25px;
+}
+
+/* aligns text and changes the color of the article's text */
+.article-text{
+    text-align: start;
+    color:black;
+}
+
+/* gives padding to each of the articles */
+.articles{
+    padding:20px 55px 0px 55px ;
+}
+
+/* changes the articles opacity when hovered */
+.articles:hover{
+    opacity: 0.75;
+}
+
+/* styles the hr */
+.latest-hr{
+    margin-top:30px;
+    border: 2px solid gray;
+    color:gray;
+}
+
+/* to remove the styling of the link */
+#Latest-On-Lakers > a:link{
+    text-decoration: none;
+    opacity: 1;
+}
+
+/* removes the underline */
+.articles > a:link{
+    text-decoration: none;
+}
+
+/* decreases opacity when an article is hovered over */
+#Latest-On-Lakers > a:hover{
+    opacity: 0.75;
+}
+
+/* changes the font and font size of the title */
+.article-title{
+    font-family: 'Anton', sans-serif;
+    font-size:1.8rem;
+}
+
+/* changes the font, color, and font size of the caption */
+.article-caption{
+    color:gray;
+    font-family: "Oswald", sans-serif;
+    font-size: 0.9rem;
+}
+
+/* changes the font size and color of the article information */
+.article-info{
+    font-size:0.7rem;
+    color:gray;
+}
+
+/* responsive layout of the articles list for tablet devices */
+@media only screen and (max-width:992px){
+    .news-image{
+        float:none;
+        height:200px;
+    }
+    .article-text{
+        text-align: center;
+        padding:5px
+    }
+}
+
+.read-more > a{
+    color:black
+}
+/* changes the size and aligns the read more arrow */
+.read-more{
+    font-size:2rem;
+    text-align: center;
+}
+
+/* changes the size and aligns the read more arrow when hovered*/
+.read-more > a:hover{
+    color:#552583;
+    font-size: 2.2rem;
+}
+
+/* class that hides the read more articles and the draft picks */
+.none{
+    display:none;
+}
+
+/* template1 article *//* template1 article *//* template1 article *//* template1 article *//* template1 article */
+.root-text{
+    margin-top:30px;
+    margin-left:50px;
+    font-size: 0.8rem;
+    color:grey;
+}
+
+/* removes the underline */
+.root-text > a:link{
+    text-decoration: none;
+}
+
+/* removes the underline and changes the color */
+.root-text > a:hover{ 
+    color:#552583;
+    text-decoration: underline;
+}
+
+/* changes the color */
+.root-link{
+    color:grey;
+}
+
+/* makes the carousel display flex and centered */
+.carousel-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* changes the size of the main article's image */
+.main-image{
+    height: 500px;
+    width: 780px;
+    padding-top: 20px;
+}
+
+.prev, .next{
+    color: #552583;
+    font-size: 3rem;
+}
+
+.prev:hover, .next:hover{
+    color:#FDB927;
+    font-size: 3.2rem;
+}
+
+.carousel-items{
+    width: 770px;
+    position:relative;
+}
+
+.carousel-arrow-left{
+    position:absolute;
+    top:48%;
+    left:5%;
+}
+
+.carousel-arrow-right{
+    position:absolute;
+    top:48%;
+    right:5%;
+}
+
+/* aligns the article information to the center of the page */
+.article-page{
+    text-align: center;
+}
+
+/* changes the font size and font of the article title  */
+.article-page-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 4rem;
+    padding: 10px 20px;
+}
+
+/* changes the color, font size and font of the article details  */
+.article-page-details{
+    margin-top:20px;
+    font-size:0.75rem;
+    color: grey;    
+}
+
+/* changes the height of the body image */
+.body-image{
+    height:300px;
+}
+
+/* aligns the body image */
+.body-image-container{
+    text-align: center;
+}
+
+/* aligns the page text and adds padding */
+.article-page-body-text{
+    text-align: justify;
+    padding: 20px 200px;
+}
+
+/* aligns the quote text, changes its font size, family and adds padding */
+.body-quote{
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 10px 150px;
+    font-family: "Oswald", sans-serif;
+    
+}
+
+/* responsive layout of the articles list for tablet devices */
+@media only screen and (max-width:992px){
+    /* changes the size of the main article's image */
+    .main-image{
+        height:400px;
+        width:600px;
+    }
+    /* changes the width of the carousel */
+    .carousel{
+        width: 675px;
+    }
+    /* changes the height of the body image */
+    .body-image{
+        height:200px;
+    }
+    /* aligns the page text and adds padding */
+    .article-page-body-text{
+        padding: 20px 150px;
+    }
+    /* changes its font size and adds padding */
+    .body-quote{
+        font-size:1.8rem;
+        padding: 10px 50px;
+    }
+
+    .carousel-items{
+        width:600px;
+    }
+
+    .prev, .next{
+        color: #552583;
+        font-size: 2.5rem;
+    }
+    
+    .prev:hover, .next:hover{
+        color:#FDB927;
+        font-size: 2.8rem;
+    }
+    
+}
+
+/* responsive layout for all devices smaller than a regular tablet */
+@media only screen and (max-width:768px){
+
+    /* changes the size of the main article's image */
+    .main-image{
+        height:280px;
+        width:420px;
+    }
+
+    /* changes the width of the carousel */
+    .carousel{
+        width: 500px;
+    }
+    /* aligns the page text and adds padding */
+    .article-page-body-text{
+        padding: 20px 30px;
+    }
+    /* changes the font and margin of the root text */
+    .root-text{
+        margin-left:35px;
+        font-size: 0.7rem;
+    }
+    .body-quote{
+        font-size:1.5rem;
+        padding: 10px;
+    }
+
+    .carousel-items{
+        width:420px;
+    }
+
+    .prev, .next{
+        color: #552583;
+        font-size: 2.2rem;
+    }
+    
+    .prev:hover, .next:hover{
+        color:#FDB927;
+        font-size: 2.5rem;
+    }
+}
+
+
+/* template2 article *//* template2 article *//* template2 article */
+
+/* aligns the body video to the center */
+.body-video-container{
+    text-align: center;    
+}
+
+/* styles the size of the body video */
+.body-video{
+    height:350px;
+    width:550px;
+}
+/* adds margin, aligns the text, makes the background transparent and adds perspective to the card */
+.flip-card {
+    margin: 20px;
+    text-align: center;
+    background-color: transparent;
+    perspective: 1000px;
+    
+  }
+  
+/* styles the inner card */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 4px 4px 8px 5px #552583;
+    background-color: #552583;
+  }
+  
+/* flips the card when hovered */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  /* positions the front and back card and styles the flipping effect */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+/* styles the color of the front of the card */
+.flip-card-front {
+    background-color: white;
+    color: black;
+  }
+  
+/* styles the color of the back of the card */
+.flip-card-back {
+    background-color: #552583;
+    color: #FDB927;
+    transform: rotateY(180deg);
+  }
+
+/* adds margin to the card text */
+.card-text{
+    margin-top: 20px;
+  }
+/* styles the card title */
+.card-text > h1{
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+}
+/* styles the card stats */
+.card-text > p {
+    font-family: "Oswald", sans-serif;  
+    font-size: 0.9rem;  
+}
+/* makes the card display flex  */
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* aligns the card info */
+.card-info-container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* changes the color and font size of the card info */
+.card-info-container > p{
+    color: grey;
+    font-size: 0.8rem;
+}
+
+/* changes the size of the image and the card */
+.profileImg , .flip-card{
+    width: 220px;
+    height:280px;
+}
+
+/* changes the font and color of the media credit */
+.body-media-credit{
+    margin-bottom: 30px;
+    font-size: 0.75rem;
+    color:grey;
+}
+
+/* responsive layout of the articles list for tablet devices */
+@media only screen and (max-width:992px){
+    .body-video{
+        height:300px;
+        width:400px;
+    }
+}
+
+/* Draft Page *//* Draft Page *//* Draft Page *//* Draft Page */
+
+/* aligns the draft page and makes it display a grid in a 3 column per row */
+#Lakers-picks-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* changes the font of and aligns the title  */
+#draft-title{
+    font-family: 'Anton', sans-serif;
+    margin: 50px 30px 0px 30px;
+    text-align: center;
+    color:#FDB927;
+}
+
+/* changes the font size of the title */
+#draft-title > h1{
+    font-size:6rem;
+    /* text-decoration: underline; */
+}
+
+/* changes the font size, font and margin of the year title of draft page */
+#year{
+    font-family: 'Anton', sans-serif;
+    font-size:2.8rem;
+    margin-top: 50px;
+    color:#FDB927;
+    color: #552583;
+}
+
+/* animates and colors the basketball in the middle of the draft year title */
+.draft-basketball{
+    background:linear-gradient(to bottom, #552583, #FDB927);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: spin;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+/* removes list styling, margins, padding, styles font and font size of the picks list */
+.picks-list{
+    list-style-type: none;
+    padding: 0 50px; /* Remove padding */
+    margin: 0; /* Remove margins */
+    font-family: "Oswald", sans-serif;
+    font-size: 1.1rem;
+    color:grey;
+}
+
+/* makes the draft hr display flex so its centered */
+.draft-hr-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* changes the width, styles the border, and rounds the hr */
+.draft-hr{
+    width:50%;
+    border: 3px solid #552583;
+    border-radius: 30%;
+}
+
+/* changes the font size and adds margin to the see more arrow */
+.see-picks{
+    font-size:2rem;
+    margin-bottom: 20px;
+    color:#552583
+}
+
+/* changes the font size and adds margin to the see more arrow when hovered */
+.see-picks:hover{
+    transform: scale(1.1);
+    color:#FDB927;
+}
+
+/* responsive layout of the articles list for tablet devices */
+@media only screen and (max-width:992px){
+    
+/* aligns the draft page and makes it display a grid in a 2 column per row */
+    #Lakers-picks-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .picks-list{
+        padding: 0 100px;
+    }
+}
+
+/* responsive layout for all devices smaller than a regular tablet */
+@media only screen and (max-width:768px){
+    
+/* aligns the draft page and makes it display a grid in a 1 column per row */
+    #Lakers-picks-container{
+        grid-template-columns: 1fr;
+    }
+    .picks-list{
+        padding: 0 120px;
+    }
+}
+
+
+/* sign up  *//* sign up  *//* sign up  *//* sign up  *//* sign up  *//* sign up  */
+
+/* aligns and gives padding to the top and bottom of the container */
+.sign-up-container{
+    text-align: center;
+    padding-top:75px;
+    padding-bottom: 75px;
+}
+
+/* changes the font size, color, and font family of the sign up title */
+.sign-up-title{
+    font-size: 4.5rem;
+    font-family: 'Anton', sans-serif;
+    color:#FDB927;
+}
+
+/* changes the font size, color, and font family of the sign up desc */
+.sign-up-desc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color:gray;
+    font-family: "Oswald", sans-serif;
+}
+/* changes the font size and font family of the form label*/
+.label{
+    font-size: 1.8rem;
+    font-family: 'Anton', sans-serif;
+}
+
+/* adds margin to the labels */
+.label-container{
+    margin-right:242px;
+    margin-top: 20px;
+    margin-bottom: 7px; 
+    text-align: center;
+}
+
+
+/* changes the font size and font family of the form input*/
+.input{
+    height: 40px;
+    width:300px;
+    border-radius: 8px;
+    background-color: #552583;
+    border: 2px solid #FDB927;
+    color:#FDB927;
+    font-family: "Oswald", sans-serif;
+}
+
+/* changes the color of the placeholder color */
+.input::placeholder{
+    color: goldenrod;
+}
+
+/* changes the margin of the tnc container */
+.sign-up-tnc-container{
+    margin-top: 15px;
+}
+
+/* changes the font size, color, and font family of the terms n conditions desc */
+.tnc-desc{
+    font-size: 0.8rem;
+    color:gray;
+    font-family: "Oswald", sans-serif;
+}
+
+
+/* changes the font size, color, and font family of the sign up button */
+.sign-up-button{
+    width: 125px;
+    background-color: #FDB927;
+    border: 2px solid #552583;
+    color:#552583;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.3rem;
+}
+
+
+/* changes the font size, color, and font family of the sign up button when hovered */
+.sign-up-button:hover{
+    background-color: #552583;
+    border: 2px solid #FDB927;
+    color:#FDB927;
+}
+
+/* styles the error message */
+.errorMessage{
+    text-align: center;
+    color:red;
+    font-family: "Oswald", sans-serif;
+}
+
+.errorMessage-container{
+    text-align: center;
+}
+
+/* styles the success message */
+#successMessage{
+    color:#FDB927;
+    font-family: "Oswald", sans-serif;
+    margin: 20px;
+}
+
+@media only screen and (max-width:768px){
+    .sign-up-desc{
+        font-size: 0.7rem;
+        padding: 0px 50px;
+    }
+}
+
